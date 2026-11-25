@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toddler Launcher · minisonmars apps</title>
+<meta name="description" content="A simple, locked-down home screen for a toddler. Only the apps you allow are shown; everything else is behind a parent PIN.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="../index.html">minisonmars apps</a>
+  <nav><a href="../index.html">Apps</a><a href="../privacy.html">Privacy</a><a href="../contact.html">Contact</a></nav>
+</header>
+<main>
+<div class="app-head"><svg class="icon" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#2f6fde"/><rect x="12" y="12" width="17" height="17" rx="5" fill="#ffd23f"/><rect x="35" y="12" width="17" height="17" rx="5" fill="#ff6b6b"/><rect x="12" y="35" width="17" height="17" rx="5" fill="#4cd38a"/><rect x="35" y="35" width="17" height="17" rx="5" fill="#ffffff"/></svg><div><h1>Toddler Launcher</h1><p class="lead">A simple, locked-down home screen for a toddler. Only the apps you allow are shown; everything else is behind a parent PIN.</p></div></div>
+<p>Toddler Launcher replaces the normal home screen while your child uses the device. Big icons on a bright wallpaper, and no way into Settings, the Play Store or other apps you haven't chosen.</p>
+<h2>What it does</h2>
+<ul>
+<li><strong>Toddler screen</strong>: big app icons in a grid, your child's name at the top, more pages with big arrows.</li>
+<li><strong>Parent area</strong>: hold the gear and enter your PIN or pattern.</li>
+<li><strong>Choose apps</strong>, set a daily limit for each one, and mark some as always allowed.</li>
+<li><strong>Screen time</strong>: a daily limit, a five-minute warning, "15 more minutes" and allowed hours for weekdays and weekends.</li>
+<li><strong>Usage report</strong>: minutes per app for the last three days and a seven-day average.</li>
+<li><strong>Protection</strong>: Toddler Guard sends your child back if they reach an app that isn't allowed, closes the pull-down shade, and can cap the media volume.</li>
+<li><strong>Look and layout</strong>: columns, rows, icon size, colours or your own photo as wallpaper.</li>
+</ul>
+<h2>Toddler Guard and the accessibility service</h2>
+<div class="note">
+<p>Toddler Launcher uses Android's <strong>Accessibility Service</strong> for one purpose: to keep a child inside the apps a parent has allowed. It watches only which app comes to the front, so it can send the child back to the toddler screen if the app isn't allowed, and it closes the notification shade if it is pulled down.</p>
+<p>It does not read the text or content on the screen, does not record what is typed, and does not send anything anywhere. You turn it on yourself in Android's settings, and you can turn it off there at any time.</p>
+</div>
+<h2>Toddler Parent app</h2>
+<div class="app-head"><svg class="icon" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#5a4fcf"/><rect x="20" y="9" width="24" height="46" rx="5" fill="#ffffff"/><rect x="24" y="15" width="16" height="30" rx="2" fill="#5a4fcf"/><circle cx="32" cy="50" r="2.5" fill="#5a4fcf"/><path d="M27 31l4 4 7-8" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><div><p>A companion app for the parent's phone. It shows the same parent area as the toddler device, so you can change limits, give extra time or start a break from across the room.</p></div></div>
+<ul>
+<li>Finds the toddler device on the same Wi-Fi, or by scanning a QR code.</li>
+<li>Pair once with the parent PIN. After that every message between the two devices is encrypted.</li>
+<li>No Wi-Fi? The toddler device can make a private hotspot just for the parent's phone.</li>
+<li>The two devices talk directly to each other. Nothing goes through the internet or any server.</li>
+</ul>
+
+<h2>Get the app</h2>
+<p>The app is not on Google Play yet. You can install the latest version from its releases page on GitHub.</p>
+<p><a class="button" href="https://github.com/minisonmars/toddler-launcher/releases">Download from GitHub</a><a class="button" href="../privacy.html#toddler-launcher">Privacy</a></p>
+
+</main>
+<footer>
+  <p>Simple Android apps made in England. No ads, no accounts, no tracking.</p>
+  <p><a href="../privacy.html">Privacy policy</a> · <a href="../contact.html">Contact</a> · <a href="https://github.com/minisonmars">GitHub</a></p>
+</footer>
+</body>
+</html>

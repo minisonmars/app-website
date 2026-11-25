@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy · minisonmars apps</title>
+<meta name="description" content="Privacy policy for minisonmars Android apps: no data collected, no ads, no tracking.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="index.html">minisonmars apps</a>
+  <nav><a href="index.html">Apps</a><a href="privacy.html">Privacy</a><a href="contact.html">Contact</a></nav>
+</header>
+<main>
+<h1>Privacy policy</h1>
+<p class="lead">For Toddler Launcher, Toddler Parent, Toddler Doodle, Toddler Camera and Caravan Leveller. Last updated 25 November 2026.</p>
+
+<div class="note">
+<p><strong>The short version.</strong> These apps do not collect, store or share any personal information with the developer or anyone else. There are no accounts, no ads, no analytics and no tracking. Everything you set up and everything your child creates stays on your device. The only network traffic is explained below: checking GitHub for updates, and the direct, encrypted link between Toddler Launcher and the Toddler Parent app on your own network.</p>
+</div>
+
+<h2>Who we are</h2>
+<p>The apps are made by an individual developer in England ("we" or "the developer"), publishing as minisonmars. If you have a question about privacy, email <a href="mailto:benstoehr1986@gmail.com">benstoehr1986@gmail.com</a>.</p>
+
+<h2>What applies to all the apps</h2>
+<ul>
+<li>We do not collect personal information. Nothing you enter or create in the apps is sent to us.</li>
+<li>No advertising, no analytics or crash-reporting services, and no third-party tracking code.</li>
+<li>No sign-in or account is needed, so there is no account to delete.</li>
+<li>Settings and content are stored only in the app's own storage on your device. Uninstalling the app, or clearing its storage in Android Settings, deletes them.</li>
+<li>We do not sell or share any data, because we never receive any.</li>
+</ul>
+
+<h2>Children</h2>
+<p>Toddler Launcher, Toddler Doodle and Toddler Camera are designed to be set up by a parent and used by young children. They do not collect personal information from children, have no ads, no in-app purchases, no chat and no links out for the child to follow. Settings, installs and updates are behind a parent PIN. In line with the UK Children's Code (Age Appropriate Design Code), the apps collect no data about children at all.</p>
+
+<h2 id="toddler-launcher">Toddler Launcher</h2>
+<p><strong>Stored on the device only:</strong> the list of allowed apps and their time limits, screen time and allowed hours, your child's name if you enter it, a wallpaper photo if you choose one, minutes used per app (for the usage report), and the parent PIN or pattern (kept as a scrambled hash, not as the PIN itself). You can save a backup of the settings to a file you choose; that file stays wherever you put it.</p>
+<p><strong>Accessibility service (Toddler Guard).</strong> Toddler Launcher uses Android's Accessibility Service API so a parent can lock the device to the apps they have chosen. When switched on, it is told only which app has come to the front. If that app is not allowed it returns the child to the toddler screen, and if the notification shade is pulled down it closes it. It does not read the text or content of the screen, does not record keystrokes or anything typed, and does not store or send this information anywhere. A parent must switch it on in Android's accessibility settings, and can switch it off there at any time.</p>
+<p><strong>Permissions it uses and why:</strong></p>
+<div class="table-wrap"><table>
+<tr><th>Permission</th><th>Why</th></tr>
+<tr><td>Internet and network state</td><td>Update checks, the list of recommended apps, and the link to the Toddler Parent app on your own network.</td></tr>
+<tr><td>Wi-Fi, nearby devices, multicast</td><td>To find, and be found by, the Toddler Parent app on the same Wi-Fi, to start the private "Connect directly" hotspot, and to let a parent add a Wi-Fi network. On Android 12 and older, Android requires location permission for this; the app does not use your location.</td></tr>
+<tr><td>Camera</td><td>Only to scan a QR code when pairing. No pictures are taken or saved.</td></tr>
+<tr><td>Install apps</td><td>To install its own updates and the recommended toddler apps, only when a parent taps Install.</td></tr>
+<tr><td>Foreground service, wake lock</td><td>To keep remote access running while the child is in another app, with a notification showing.</td></tr>
+</table></div>
+<p><strong>Recommended apps.</strong> The parent area downloads a short public list of the developer's other toddler apps from GitHub. No information about you is sent.</p>
+<p><strong>Remote access and the Toddler Parent app.</strong> This is off until a parent switches it on. The toddler device and the parent's phone talk directly to each other over your own Wi-Fi or a private hotspot made by the toddler device. Nothing passes through the internet or any server, and the developer never sees it. Pairing needs the parent PIN. After pairing, the two devices share a secret key that is worked out on each device and never sent, and every message is encrypted with it (AES-GCM). The data exchanged is the launcher's settings, limits and usage report, so a parent can view and change them. There is also a simple web page for a browser on the same network, which asks for the parent PIN; it uses ordinary unencrypted HTTP on your local network, so use the Toddler Parent app for an encrypted connection.</p>
+<p><strong>Update checks.</strong> Versions installed from GitHub check GitHub for a newer version (at most every six hours, and when you open the app's settings or parent area), and download it only if you choose to install it. This is an ordinary web request to GitHub, which, like any website, receives your device's IP address. No information about you or how you use the app is included. See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>. Versions installed from Google Play do not do this; Google Play handles their updates.</p>
+
+<h2 id="toddler-parent">Toddler Parent</h2>
+<p>The companion app for the parent's phone. It stores the paired toddler devices and their shared keys on the phone. It uses the camera only to scan the toddler device's QR code, and Wi-Fi and network access only to find and talk directly to the toddler device as described above. It sends nothing to the developer or any server.</p>
+<p><strong>Update checks.</strong> Versions installed from GitHub check GitHub for a newer version (at most every six hours, and when you open the app's settings or parent area), and download it only if you choose to install it. This is an ordinary web request to GitHub, which, like any website, receives your device's IP address. No information about you or how you use the app is included. See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>. Versions installed from Google Play do not do this; Google Play handles their updates.</p>
+
+<h2 id="toddler-doodle">Toddler Doodle</h2>
+<p>Drawings are saved in the app's own storage on the device. They are copied to your Photos only if a parent chooses "copy to Photos" (on Android 9 and older this needs the storage permission). The parent PIN is kept as a hash. Nothing is sent anywhere.</p>
+<p><strong>Update checks.</strong> Versions installed from GitHub check GitHub for a newer version (at most every six hours, and when you open the app's settings or parent area), and download it only if you choose to install it. This is an ordinary web request to GitHub, which, like any website, receives your device's IP address. No information about you or how you use the app is included. See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>. Versions installed from Google Play do not do this; Google Play handles their updates.</p>
+
+<h2 id="toddler-camera">Toddler Camera</h2>
+<p>Pictures and videos are saved on the device in Pictures/ToddlerCamera and Movies/ToddlerCamera, where your normal gallery app can see them. They are never uploaded by the app.</p>
+<div class="table-wrap"><table>
+<tr><th>Permission</th><th>Why</th></tr>
+<tr><td>Camera</td><td>To take pictures and videos.</td></tr>
+<tr><td>Microphone</td><td>To record sound with videos.</td></tr>
+<tr><td>Photos and videos</td><td>To show the gallery.</td></tr>
+<tr><td>Location</td><td>Only if a parent switches on "Save location". The location is then written into each picture file on the device, as phone cameras do. Off by default, and it is never sent anywhere by the app.</td></tr>
+<tr><td>Install apps</td><td>To install its own updates when a parent taps Install.</td></tr>
+</table></div>
+<p><strong>Update checks.</strong> Versions installed from GitHub check GitHub for a newer version (at most every six hours, and when you open the app's settings or parent area), and download it only if you choose to install it. This is an ordinary web request to GitHub, which, like any website, receives your device's IP address. No information about you or how you use the app is included. See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>. Versions installed from Google Play do not do this; Google Play handles their updates.</p>
+
+<h2 id="caravan-leveller">Caravan Leveller</h2>
+<p>Uses the phone's motion sensor to measure tilt. Caravan profiles, sizes and calibration are stored on the device only. Spoken instructions use your phone's own text-to-speech engine, chosen in Android's settings. Nothing is sent anywhere.</p>
+<p><strong>Update checks.</strong> Versions installed from GitHub check GitHub for a newer version (at most every six hours, and when you open the app's settings or parent area), and download it only if you choose to install it. This is an ordinary web request to GitHub, which, like any website, receives your device's IP address. No information about you or how you use the app is included. See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>. Versions installed from Google Play do not do this; Google Play handles their updates.</p>
+
+<h2>Your rights</h2>
+<p>Under UK data protection law (UK GDPR) you have rights over personal data held about you. Because we do not collect or hold any, there is nothing for us to access, correct or delete. You can delete everything an app has stored by uninstalling it or clearing its storage in Android Settings.</p>
+
+<h2>Changes to this policy</h2>
+<p>If an app changes in a way that affects privacy, this page will be updated before that version is released, and the date at the top will change.</p>
+
+<h2>Contact</h2>
+<p>Email <a href="mailto:benstoehr1986@gmail.com">benstoehr1986@gmail.com</a>.</p>
+
+</main>
+<footer>
+  <p>Simple Android apps made in England. No ads, no accounts, no tracking.</p>
+  <p><a href="privacy.html">Privacy policy</a> · <a href="contact.html">Contact</a> · <a href="https://github.com/minisonmars">GitHub</a></p>
+</footer>
+</body>
+</html>
